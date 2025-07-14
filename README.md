@@ -76,10 +76,13 @@ mysql -h <RDS_ENDPOINT> -u admin -p
 
 ## Conclusion
  This project demonstrated:
-    - Elastic Beanstalk app deployment with integrated RDS
-    - Secure service communication within a VPC
-    - EC2-based testing of database access
-    - A solid starting point for 3-tier architectu
+      - Elastic Beanstalk app deployment with integrated RDS
+      - Secure service communication within a VPC
+      - EC2-based testing of database access
+      - A solid starting point for 3-tier architecture
+
+
+Project Completed By : Akshata Waikar
 
 
 
