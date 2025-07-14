@@ -1,0 +1,14 @@
+<?php
+$mysqli = new mysqli("awseb-e-8x4mbh8zwc-stack-awsebrdsdatabase-bt9osm3ybauq.c142quc2u5in.ap-southeast-2.rds.amazonaws.com", "admin", "Akshata1307", "ebdb");
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+$mysqli->query("CREATE TABLE IF NOT EXISTS test (id INT AUTO_INCREMENT PRIMARY KEY, msg VARCHAR(100))");
+$mysqli->query("INSERT INTO test (msg) VALUES ('                            Hello from EC2                    ')");
+$result = $mysqli->query("SELECT * FROM test");
+
+while ($row = $result->fetch_assoc()) {
+    echo $row['msg'] . "<br>";
+}
+$mysqli->close();
+?>
