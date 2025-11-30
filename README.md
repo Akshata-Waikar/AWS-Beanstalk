@@ -70,8 +70,8 @@ ssh -i your-key.pem ec2-user@<EC2_PUBLIC_IP>
 sudo yum install -y mysql
 mysql -h <RDS_ENDPOINT> -u admin -p
 
-### Create test_db.php file
-### Run test_db.php file
+## Create test_db.php file
+## Run test_db.php file
   - php test_db.php
 
 ## Conclusion
